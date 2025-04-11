@@ -1,0 +1,51 @@
+{
+  "homepage": "./",
+  "name": "portfolio-desktop-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "electron-dev": "npm run build && electron ."
+  },
+  "dependencies": {
+    "chart.js": "^4.4.8",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^3.0.1"
+  },
+  "optionalDependencies": {
+  "fsevents": "^2.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^27.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.portfolio.dashboard",
+    "productName": "Portfolio Dashboard",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
