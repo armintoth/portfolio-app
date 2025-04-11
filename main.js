@@ -5,9 +5,9 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 1000,
     height: 800,
-   webPreferences: {
-  contextIsolation: false
-}
+    webPreferences: {
+      contextIsolation: false
+    }
   });
 
   win.loadFile('build/index.html');

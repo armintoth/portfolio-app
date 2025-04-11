@@ -1,3 +1,5 @@
+import React from "react";
+
 export function Button({ children, className = "", variant = "default", ...props }) {
   const base = "px-4 py-2 rounded text-sm font-medium transition";
   const variants = {
